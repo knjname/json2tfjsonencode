@@ -13,6 +13,9 @@ export const converter = (json: unknown, depth = 1): string => {
   if (typeof json === "number") {
     return `${json}`;
   }
+  if (typeof json === "boolean") {
+    return JSON.stringify(json);
+  }
   if (json instanceof Array) {
     return `[\n${json
       .map((it) => `${idt}${converter(it, depth + 1)},\n`)
