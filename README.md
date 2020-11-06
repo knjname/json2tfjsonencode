@@ -1,4 +1,4 @@
-# JSON to Terraform's `jsonencode()` conveter tool
+# JSON to Terraform's `jsonencode()` converter tool
 
 ```
 # Install yarn version 1.x.
